@@ -11,9 +11,19 @@ a {
   text-decoration: none;
 }
 
-/* ---------------- */
-/* Reset            */
-/* ---------------- */
+/* ------------------ */
+/* Custom properties  */
+/* ------------------ */
+
+:root {
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+}
+
+/* ------------------ */
+/* Reset              */
+/* ------------------ */
 
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 
@@ -70,9 +80,11 @@ select {
   }
 }
 
-/* ---------------- */
-/* Utility classes  */
-/* ---------------- */
+/* ------------------ */
+/* Utility classes    */
+/* ------------------ */
+
+/* general */
 
 .flex {
   display: flex;
@@ -102,4 +114,14 @@ select {
   border: 0;
 }
 
-/* ---------------- */
+/* colors */
+
+.bg-dark { background-color: hsl( var(--clr-dark) ); }
+.bg-accent { background-color: hsl( var(--clr-light) ); }
+.bg-white { background-color: hsl( var(--clr-white) ); }
+
+.text-dark { color: hsl( var(--clr-dark) ); }
+.text-accent { color: hsl( var(--clr-light) ); }
+.text-white { color: hsl( var(--clr-white) ); }
+
+/* ------------------ */
