@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import ExploreButton from '../components/ExploreButton'
 import NumberedTitle from '../components/NumberedTitle'
 import styles from '../styles/Home.module.css'
 
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
     <div className="container flex">
       <div className="box"><h1>a</h1></div>
       <div className="box"><NumberedTitle number="2" text="example" /></div>
-      <div className="box">c</div>
+      <div className="box"><ExploreButton /></div>
       <div className="box">d</div>
     </div>
   )
