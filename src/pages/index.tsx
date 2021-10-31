@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import ExploreButton from '../components/ExploreButton'
 import NumberedTitle from '../components/NumberedTitle'
+import PrimaryNavigation from '../components/PrimaryNavigation'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
       <div className="box"><NumberedTitle number="2" text="example" /></div>
       <div className="box"><ExploreButton /></div>
       <div className="box">d</div>
+      <div className="box"><PrimaryNavigation /></div>
     </div>
   )
 }

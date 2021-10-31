@@ -1,0 +1,16 @@
+.primaryNavigation {
+  --gap: 8rem;
+  --underline-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primaryNavigation a {
+  text-decoration: none;
+}
+
+.primaryNavigation a > span {
+  font-weight: 700;
+  margin-right: .5rem;
+}
