@@ -1,0 +1,21 @@
+.numberedButton {
+  cursor: pointer;
+  border: 1px solid hsl( var(--clr-white) / .25 );
+  border-radius: 50%;
+  padding: 0 1em;
+  aspect-ratio: 1;
+  background-color: hsl( var(--clr-dark) / 1 );
+  font-family: var(--ff-serif);
+  color: var(--clr-white);
+  font-size: var(--fs-600);
+}
+
+.numberedButton:hover,
+.numberedButton:focus {
+  border: 1px solid hsl( var(--clr-white) / 1 );
+}
+
+.numberedButton[aria-selected="true"] {
+  color: hsl( var(--clr-dark) / 1 );
+  background-color: hsl( var(--clr-white) / 1 );
+}

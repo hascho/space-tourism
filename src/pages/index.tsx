@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Dots from '../components/Dots'
 import ExploreButton from '../components/ExploreButton'
+import NumberedButton from '../components/NumberedButton'
 import NumberedTitle from '../components/NumberedTitle'
 import PrimaryNavigation from '../components/PrimaryNavigation'
 import Tabs from '../components/Tabs'
@@ -41,6 +42,10 @@ const Home: NextPage = () => {
       <div className="box"><PrimaryNavigation /></div>
       <div className="box"><Tabs /></div>
       <div className="box"><Dots /></div>
+      <div className="box flow">
+        <NumberedButton selected>1</NumberedButton>
+        <NumberedButton selected={false}>2</NumberedButton>
+      </div>
     </div>
   )
 }
