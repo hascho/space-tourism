@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Dots from '../components/Dots'
 import ExploreButton from '../components/ExploreButton'
 import NumberedTitle from '../components/NumberedTitle'
 import PrimaryNavigation from '../components/PrimaryNavigation'
@@ -39,6 +40,7 @@ const Home: NextPage = () => {
       <div className="box">d</div>
       <div className="box"><PrimaryNavigation /></div>
       <div className="box"><Tabs /></div>
+      <div className="box"><Dots /></div>
     </div>
   )
 }
