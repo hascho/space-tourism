@@ -11,7 +11,7 @@ function PrimaryNavigationItem({ active, children }: PrimaryNavigationProps) {
   return (
     <li className={classNames({'active': active})}>
       <a
-        className="uppercase text-white letter-spacing-2"
+        className="ff-sans-cond uppercase text-white letter-spacing-2"
         href="#"
       >
         {children}
@@ -25,13 +25,16 @@ function PrimaryNavigation() {
     <nav>
       <ul className={classNames(styles.primaryNavigation, 'underline-indicators', 'flex')}>
         <PrimaryNavigationItem active>
-          <span>01</span>Active
+          <span>00</span>Home
         </PrimaryNavigationItem>
         <PrimaryNavigationItem active={false}>
-          <span>02</span>Hovered
+          <span>01</span>Destination
         </PrimaryNavigationItem>
         <PrimaryNavigationItem active={false}>
-          <span>03</span>Idle
+          <span>02</span>Crew
+        </PrimaryNavigationItem>
+        <PrimaryNavigationItem active={false}>
+          <span>03</span>Technology
         </PrimaryNavigationItem>
       </ul>
     </nav>

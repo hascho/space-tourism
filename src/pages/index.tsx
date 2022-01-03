@@ -34,19 +34,37 @@ const Home: NextPage = () => {
     //     </a>
     //   </footer>
     // </div>
-    <div className="container flex">
-      <div className="box"><h1>a</h1></div>
-      <div className="box"><NumberedTitle number="2" text="example" /></div>
-      <div className="box"><ExploreButton /></div>
-      <div className="box">d</div>
-      <div className="box"><PrimaryNavigation /></div>
-      <div className="box"><Tabs /></div>
-      <div className="box"><Dots /></div>
-      <div className="box flow">
-        <NumberedButton selected>1</NumberedButton>
-        <NumberedButton selected={false}>2</NumberedButton>
+    // <div className="container flex">
+    //   <div className="box"><h1>a</h1></div>
+    //   <div className="box"><NumberedTitle number="2" text="example" /></div>
+    //   <div className="box"><ExploreButton /></div>
+    //   <div className="box">d</div>
+    //   <div className="box"><PrimaryNavigation /></div>
+    //   <div className="box"><Tabs /></div>
+    //   <div className="box"><Dots /></div>
+    //   <div className="box flow">
+    //     <NumberedButton selected>1</NumberedButton>
+    //     <NumberedButton selected={false}>2</NumberedButton>
+    //   </div>
+    // </div>
+    <>
+      <header className="primaryHeader flex">
+        <div>
+          <Image className="logo" src="/assets/shared/logo.svg" alt="space tourism logo" width="20" height="20" />
+        </div>
+        <PrimaryNavigation />
+      </header>
+
+      <div className="container">
+        <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to
+        <span className="fs-900 ff-serif text-white">Space</span></h1>
+        <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!</p>
+
+        <ExploreButton />
       </div>
-    </div>
+    </>
   )
 }
 
