@@ -48,7 +48,7 @@ const Home: NextPage = () => {
     //     <NumberedButton selected={false}>2</NumberedButton>
     //   </div>
     // </div>
-    <div className={styles.home}>
+    <div className={classNames(styles.home, styles.bgImage)}>
       <header className="primaryHeader flex">
         <div>
           <Image className="logo" src="/assets/shared/logo.svg" alt="space tourism logo" width="20" height="20" />

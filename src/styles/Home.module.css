@@ -126,9 +126,26 @@
   grid-template-rows: min-content 1fr;
 }
 
+.bgImage {
+  background-size: cover;
+  background-position: bottom center;
+  background-image: url('/assets/home/background-home-mobile.jpg');
+}
+
+@media (min-width: 35rem) {
+  .bgImage {
+    background-position: center center;
+    background-image: url('/assets/home/background-home-tablet.jpg');
+  }
+}
+
 @media (min-width: 45em) {
   .gridContainer {
     padding-bottom: max(6rem, 20vh);
     align-items: end;
+  }
+
+  .bgImage {
+    background-image: url('/assets/home/background-home-desktop.jpg');
   }
 }
