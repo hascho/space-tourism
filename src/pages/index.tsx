@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -47,7 +48,7 @@ const Home: NextPage = () => {
     //     <NumberedButton selected={false}>2</NumberedButton>
     //   </div>
     // </div>
-    <div className="home">
+    <div className={styles.home}>
       <header className="primaryHeader flex">
         <div>
           <Image className="logo" src="/assets/shared/logo.svg" alt="space tourism logo" width="20" height="20" />
@@ -55,7 +56,7 @@ const Home: NextPage = () => {
         <PrimaryNavigation />
       </header>
 
-      <div className="grid-container">
+      <div className={classNames("grid-container", styles.gridContainer)}>
         <div>
           <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to
           <span className="d-block fs-900 ff-serif text-white">Space</span></h1>

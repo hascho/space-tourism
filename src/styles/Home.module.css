@@ -119,3 +119,16 @@
     flex-direction: column;
   }
 } */
+
+.home {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+@media (min-width: 45em) {
+  .gridContainer {
+    padding-bottom: max(6rem, 20vh);
+    align-items: end;
+  }
+}

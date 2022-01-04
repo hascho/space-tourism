@@ -1,4 +1,5 @@
 .largeButton {
+  font-size: 2rem;
   position: relative;
   display: inline-grid;
   z-index: 1;

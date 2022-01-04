@@ -6,7 +6,7 @@ function ExploreButton() {
     <a
       className={classNames(
         styles.largeButton,
-        'uppercase', 'ff-serif', 'fs-600', 'text-dark', 'bg-white'
+        'uppercase', 'ff-serif', 'text-dark', 'bg-white'
       )}
     >
       Explore
