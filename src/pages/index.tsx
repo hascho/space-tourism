@@ -6,7 +6,7 @@ import Dots from '../components/Dots'
 import ExploreButton from '../components/ExploreButton'
 import NumberedButton from '../components/NumberedButton'
 import NumberedTitle from '../components/NumberedTitle'
-import PrimaryNavigation from '../components/PrimaryNavigation'
+import { PrimaryNavigation } from '../components/PrimaryNavigation'
 import Tabs from '../components/Tabs'
 import styles from '../styles/Home.module.css'
 
