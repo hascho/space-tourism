@@ -22,22 +22,30 @@ function PrimaryNavigationItem({ active, children }: PrimaryNavigationProps) {
 
 function PrimaryNavigation() {
   return (
-    <nav>
-      <ul className={classNames(styles.primaryNavigation, 'underline-indicators', 'flex')}>
-        <PrimaryNavigationItem active>
-          <span>00</span>Home
-        </PrimaryNavigationItem>
-        <PrimaryNavigationItem active={false}>
-          <span>01</span>Destination
-        </PrimaryNavigationItem>
-        <PrimaryNavigationItem active={false}>
-          <span>02</span>Crew
-        </PrimaryNavigationItem>
-        <PrimaryNavigationItem active={false}>
-          <span>03</span>Technology
-        </PrimaryNavigationItem>
-      </ul>
-    </nav>
+    <>
+      <button className="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span className="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          className={classNames(styles.primaryNavigation, 'underline-indicators', 'flex')}
+        >
+          <PrimaryNavigationItem active>
+            <span>00</span>Home
+          </PrimaryNavigationItem>
+          <PrimaryNavigationItem active={false}>
+            <span>01</span>Destination
+          </PrimaryNavigationItem>
+          <PrimaryNavigationItem active={false}>
+            <span>02</span>Crew
+          </PrimaryNavigationItem>
+          <PrimaryNavigationItem active={false}>
+            <span>03</span>Technology
+          </PrimaryNavigationItem>
+        </ul>
+      </nav>
+    </>
   );
 }
 

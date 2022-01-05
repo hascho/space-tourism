@@ -266,3 +266,9 @@ select {
   color: hsl( var(--clr-white) / 1 );
   border-color: hsl( var(--clr-white) / 1 );
 }
+
+@media (max-width: 35em) {
+  #primary-navigation.underline-indicators > .active {
+    border: 0;
+  }
+}

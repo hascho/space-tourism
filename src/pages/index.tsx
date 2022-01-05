@@ -51,7 +51,7 @@ const Home: NextPage = () => {
     <div className={classNames(styles.home, styles.bgImage)}>
       <header className="primaryHeader flex">
         <div>
-          <Image className="logo" src="/assets/shared/logo.svg" alt="space tourism logo" width="20" height="20" />
+          <Image className="logo" src="/assets/shared/logo.svg" alt="space tourism logo" width="48" height="48" />
         </div>
         <PrimaryNavigation />
       </header>
