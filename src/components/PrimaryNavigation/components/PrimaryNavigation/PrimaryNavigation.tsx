@@ -1,16 +1,20 @@
 import classNames from 'classnames'
 import { NavToggle } from '../NavToggle';
 import { PrimaryNavigationItem } from '../PrimaryNavigationItem';
+import { useToggle } from '../NavToggle/useToggle';
 import styles from './PrimaryNavigation.module.css'
 
 export const PrimaryNavigation = () => {
+  const [navOpen, toggleNav] = useToggle(false);
+
   return (
     <>
-      <NavToggle />
+      <NavToggle onClick={toggleNav} />
       <nav>
         <ul
           id="primary-navigation"
           className={classNames(styles.primaryNavigation, 'underline-indicators', 'flex')}
+          data-visible={String(navOpen)}
         >
           <PrimaryNavigationItem active>
             <span>00</span>Home

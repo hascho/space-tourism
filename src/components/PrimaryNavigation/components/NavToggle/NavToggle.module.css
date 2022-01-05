@@ -1,0 +1,19 @@
+.navToggle {
+  display: none;
+}
+
+@media (max-width: 35em) {
+  .navToggle {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 1rem;
+    top: 2rem;
+    background: transparent;
+    border: 0;
+    background-image: url('/assets/shared/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    aspect-ratio: 1;
+  }
+}
