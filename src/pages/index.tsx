@@ -6,7 +6,7 @@ import Dots from '../components/Dots'
 import ExploreButton from '../components/ExploreButton'
 import NumberedButton from '../components/NumberedButton'
 import NumberedTitle from '../components/NumberedTitle'
-import { PrimaryNavigation } from '../components/PrimaryNavigation'
+import { PrimaryHeader } from '../components/PrimaryHeader'
 import Tabs from '../components/Tabs'
 import styles from '../styles/Home.module.css'
 
@@ -49,12 +49,7 @@ const Home: NextPage = () => {
     //   </div>
     // </div>
     <div className={classNames(styles.home, styles.bgImage)}>
-      <header className="primaryHeader flex">
-        <div>
-          <Image className="logo" src="/assets/shared/logo.svg" alt="space tourism logo" width="48" height="48" />
-        </div>
-        <PrimaryNavigation />
-      </header>
+      <PrimaryHeader />
 
       <div className={classNames("grid-container", styles.gridContainer)}>
         <div>
