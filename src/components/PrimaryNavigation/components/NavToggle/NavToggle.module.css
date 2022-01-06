@@ -13,7 +13,17 @@
     border: 0;
     background-image: url('/assets/shared/icon-hamburger.svg');
     background-repeat: no-repeat;
+    background-position: center;
     width: 1.5rem;
     aspect-ratio: 1;
+  }
+
+  .navToggle[aria-expanded="true"] {
+    background-image: url('/assets/shared/icon-close.svg');
+  }
+
+  .navToggle:focus-visible {
+    outline: 5px solid white;
+    outline-offset: 5px;
   }
 }

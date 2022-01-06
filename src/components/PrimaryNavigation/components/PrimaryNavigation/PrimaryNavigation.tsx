@@ -9,12 +9,12 @@ export const PrimaryNavigation = () => {
 
   return (
     <>
-      <NavToggle onClick={toggleNav} />
+      <NavToggle toggleState={navOpen} onClick={toggleNav} />
       <nav>
         <ul
           id="primary-navigation"
           className={classNames(styles.primaryNavigation, 'underline-indicators', 'flex')}
-          data-visible={String(navOpen)}
+          data-visible={navOpen}
         >
           <PrimaryNavigationItem active>
             <span>00</span>Home

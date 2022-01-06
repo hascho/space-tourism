@@ -26,6 +26,12 @@
     transform: translateX(100%);
   }
 
+  @media (prefers-reduced-motion: no-preference) {
+    .primaryNavigation {
+      transition: transform 500ms ease-in-out;
+    }
+  }
+
   .primaryNavigation[data-visible="true"] {
     transform: translateX(0);
   }
