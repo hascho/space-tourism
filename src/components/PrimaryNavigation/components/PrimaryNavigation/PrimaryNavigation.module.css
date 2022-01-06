@@ -47,12 +47,20 @@
   }
 }
 
-@media (min-width: 35em) and (max-width: 45em) {
+@media (min-width: 35em) {
   .primaryNavigation {
-    padding-inline: 3rem;
+    padding-inline: clamp(3rem, 7vw, 7rem);
   }
+}
 
+@media (min-width: 35em) and (max-width: 45em) {
   .primaryNavigation a > span {
     display: none;
+  }
+}
+
+@media (min-width: 45em) {
+  .primaryNavigation {
+    margin-block: 2rem;
   }
 }
