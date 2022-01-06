@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 interface PrimaryNavigationProps {
   active: boolean;
-  children: ReactNode
+  children: ReactNode;
 }
 
 export const PrimaryNavigationItem = ({ active, children }: PrimaryNavigationProps) => {

@@ -17,16 +17,16 @@ export const PrimaryNavigation = () => {
           data-visible={navOpen}
         >
           <PrimaryNavigationItem active>
-            <span>00</span>Home
+            <span aria-hidden>00</span>Home
           </PrimaryNavigationItem>
           <PrimaryNavigationItem active={false}>
-            <span>01</span>Destination
+            <span aria-hidden>01</span>Destination
           </PrimaryNavigationItem>
           <PrimaryNavigationItem active={false}>
-            <span>02</span>Crew
+            <span aria-hidden>02</span>Crew
           </PrimaryNavigationItem>
           <PrimaryNavigationItem active={false}>
-            <span>03</span>Technology
+            <span aria-hidden>03</span>Technology
           </PrimaryNavigationItem>
         </ul>
       </nav>

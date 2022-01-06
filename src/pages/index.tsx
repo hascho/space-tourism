@@ -51,7 +51,7 @@ const Home: NextPage = () => {
     <div className={classNames(styles.home, styles.bgImage)}>
       <PrimaryHeader />
 
-      <div className={classNames("grid-container", styles.gridContainer)}>
+      <main className={classNames("grid-container", styles.gridContainer)}>
         <div>
           <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to
           <span className="d-block fs-900 ff-serif text-white">Space</span></h1>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
         <div>
           <ExploreButton />
         </div>
-      </div>
+      </main>
     </div>
   )
 }
