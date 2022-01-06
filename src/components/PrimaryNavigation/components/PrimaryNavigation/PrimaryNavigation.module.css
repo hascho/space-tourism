@@ -1,9 +1,19 @@
 .primaryNavigation {
+  --gap: clamp(1.5rem, 5vw, 3rem);
   --underline-gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0;
   background: hsl( var(--clr-dark) / .95);
+}
+
+.primaryNavigation a {
+  text-decoration: none;
+}
+
+.primaryNavigation a > span {
+  font-weight: 700;
+  margin-right: .5rem;
 }
 
 @supports (backdrop-filter: blur(1.5rem)) {
@@ -37,11 +47,12 @@
   }
 }
 
-.primaryNavigation a {
-  text-decoration: none;
-}
+@media (min-width: 35em) and (max-width: 45em) {
+  .primaryNavigation {
+    padding-inline: 3rem;
+  }
 
-.primaryNavigation a > span {
-  font-weight: 700;
-  margin-right: .5rem;
+  .primaryNavigation a > span {
+    display: none;
+  }
 }
