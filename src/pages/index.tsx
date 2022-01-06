@@ -49,9 +49,10 @@ const Home: NextPage = () => {
     //   </div>
     // </div>
     <div className={classNames(styles.home, styles.bgImage)}>
+      <a href="#main" className="skip-to-content">Skip to content</a>
       <PrimaryHeader />
 
-      <main className={classNames("grid-container", styles.gridContainer)}>
+      <main id="main" className={classNames("grid-container", styles.gridContainer)}>
         <div>
           <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to
           <span className="d-block fs-900 ff-serif text-white">Space</span></h1>

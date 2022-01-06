@@ -8,6 +8,8 @@ function ExploreButton() {
         styles.largeButton,
         'uppercase', 'ff-serif', 'text-dark', 'bg-white'
       )}
+      role="button"
+      tabIndex={0}
     >
       Explore
     </a>
