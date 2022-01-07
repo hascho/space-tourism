@@ -16,16 +16,16 @@ export const PrimaryNavigation = () => {
           className={classNames(styles.primaryNavigation, 'underline-indicators', 'flex')}
           data-visible={navOpen}
         >
-          <PrimaryNavigationItem active>
+          <PrimaryNavigationItem url="/" active>
             <span aria-hidden>00</span>Home
           </PrimaryNavigationItem>
-          <PrimaryNavigationItem active={false}>
+          <PrimaryNavigationItem url="/destination" active={false}>
             <span aria-hidden>01</span>Destination
           </PrimaryNavigationItem>
-          <PrimaryNavigationItem active={false}>
+          <PrimaryNavigationItem url="/crew" active={false}>
             <span aria-hidden>02</span>Crew
           </PrimaryNavigationItem>
-          <PrimaryNavigationItem active={false}>
+          <PrimaryNavigationItem url="/technology" active={false}>
             <span aria-hidden>03</span>Technology
           </PrimaryNavigationItem>
         </ul>
