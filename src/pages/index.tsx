@@ -7,6 +7,7 @@ import ExploreButton from '../components/ExploreButton'
 import NumberedButton from '../components/NumberedButton'
 import NumberedTitle from '../components/NumberedTitle'
 import { PrimaryHeader } from '../components/PrimaryHeader'
+import { SkipToContentButton } from '../components/SkipToContentButton'
 import Tabs from '../components/Tabs'
 import styles from '../styles/Home.module.css'
 
@@ -49,7 +50,7 @@ const Home: NextPage = () => {
     //   </div>
     // </div>
     <div className={classNames(styles.home, styles.bgImage)}>
-      <a href="#main" className="skip-to-content">Skip to content</a>
+      <SkipToContentButton />
       <PrimaryHeader />
 
       <main id="main" className={classNames("grid-container", styles.gridContainer)}>
