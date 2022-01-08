@@ -11,6 +11,7 @@ export const Tab = ({ selected, children }: TabProps) => {
         'bg-dark',
         'letter-spacing-2'
       )}
+      role="tab"
       aria-selected={selected ? "true" : "false"}
     >
       {children}
