@@ -1,14 +1,9 @@
 import classNames from 'classnames'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import Dots from '../components/Dots'
 import ExploreButton from '../components/ExploreButton'
-import NumberedButton from '../components/NumberedButton'
-// import { NumberedTitle } from '../components/NumberedTitle'
 import { PrimaryHeader } from '../components/PrimaryHeader'
 import { SkipToContentButton } from '../components/SkipToContentButton'
-import Tabs from '../components/Tabs'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
