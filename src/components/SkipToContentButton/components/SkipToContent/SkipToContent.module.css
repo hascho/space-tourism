@@ -1,0 +1,13 @@
+.skipToContent {
+  position: absolute;
+  z-index: 9999;
+  background: hsl( var(--clr-white) );
+  color: hsl( var(--clr-dark) );
+  padding: .5em 1em;
+  margin-inline: auto;
+  transform: translateY(-100%);
+}
+
+.skipToContent:focus {
+  transform: translateY(0);
+}

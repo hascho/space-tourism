@@ -211,20 +211,6 @@ select {
   border: 0;
 }
 
-.skip-to-content {
-  position: absolute;
-  z-index: 9999;
-  background: hsl( var(--clr-white) );
-  color: hsl( var(--clr-dark) );
-  padding: .5em 1em;
-  margin-inline: auto;
-  transform: translateY(-100%);
-}
-
-.skip-to-content:focus {
-  transform: translateY(0);
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .skip-to-content {
     transition: transform 250ms ease-in;
