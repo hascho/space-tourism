@@ -4,6 +4,12 @@
   grid-template-rows: min-content 1fr;
 }
 
+.bgImage {
+  background-size: cover;
+  background-position: bottom center;
+  background-image: url('/assets/destination/background-destination-mobile.jpg');
+}
+
 .gridContainer {
   --flow-space: 2rem;
   grid-template-areas:
@@ -42,6 +48,11 @@
 }
 
 @media (min-width: 35em) {
+  .bgImage {
+    background-position: center center;
+    background-image: url('/assets/destination/background-destination-tablet.jpg');
+  }
+
   .numberedTitle {
     justify-self: start;
     margin-top: 2rem;
@@ -54,6 +65,10 @@
 }
 
 @media (min-width: 45em) {
+  .bgImage {
+    background-image: url('/assets/destination/background-destination-desktop.jpg');
+  }
+
   .gridContainer {
     justify-items: start;
     align-content: start;

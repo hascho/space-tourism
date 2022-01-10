@@ -8,7 +8,6 @@ export const Tab = ({ selected, children }: TabProps) => {
         'uppercase',
         'text-accent',
         'ff-sans-cond',
-        'bg-dark',
         'letter-spacing-2'
       )}
       role="tab"

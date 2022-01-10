@@ -39,7 +39,7 @@ const Destination: NextPage = () => {
           <Tab selected={false}>Titan</Tab>
         </Tabs>
 
-        <article className={styles.destinationInfo}>
+        <article className={classNames(styles.destinationInfo, 'flow')}>
           <Typography as='h2' className="fs-800 uppercase ff-serif">Moon</Typography>
           <Typography>
             See our planet as you’ve never seen it before. A perfect relaxing trip away to help 

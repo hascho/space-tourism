@@ -22,9 +22,11 @@ const Crew: NextPage = () => {
           <Dot selected={false}>The pilot</Dot>
           <Dot selected={false}>The crew engineer</Dot>
         </Dots>
-        <article className={styles.crewDetails}>
-          <Typography as="h2" className="fs-600 ff-serif uppercase">Commander</Typography>
-          <Typography className="fs-700 uppercase ff-serif">Doublas Hurley</Typography>
+        <article className={classNames(styles.crewDetails, 'flow')}>
+          <header className='flow flow--space-small'>
+            <Typography as="h2" className="fs-600 ff-serif uppercase">Commander</Typography>
+            <Typography className="fs-700 uppercase ff-serif">Doublas Hurley</Typography>
+          </header>
           <Typography>
             Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
             and former NASA astronaut. He launched into space for the third time as 
