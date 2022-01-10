@@ -1,1 +1,2 @@
-export { default } from './Dots'
+export * from './Dots';
+export * from './Dot';
