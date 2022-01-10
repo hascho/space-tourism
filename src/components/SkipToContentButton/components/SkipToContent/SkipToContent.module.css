@@ -11,3 +11,9 @@
 .skipToContent:focus {
   transform: translateY(0);
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .skipToContent {
+    transition: transform 250ms ease-in;
+  }
+}

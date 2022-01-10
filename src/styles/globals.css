@@ -214,12 +214,6 @@ select {
   border: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .skip-to-content {
-    transition: transform 250ms ease-in;
-  }
-}
-
 /* colors */
 
 .bg-dark { background-color: hsl( var(--clr-dark) ); }
