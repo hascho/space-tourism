@@ -5,5 +5,34 @@
 }
 
 .gridContainer {
-  
+  --flow-space: 2rem;
+  grid-template-areas:
+    'title'
+    'image'
+    'tabs'
+    'content';
+}
+
+.numberedTitle {
+  grid-area: title;
+}
+
+.image {
+  grid-area: image;
+  max-width: 60%;
+}
+
+.tabList {
+  grid-area: tabs;
+}
+
+.destinationInfo {
+  grid-area: content;
+}
+
+.destinationMeta {
+  flex-direction: column;
+  border-top: 1px solid hsl( var(--clr-white) / .1);
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
 }
