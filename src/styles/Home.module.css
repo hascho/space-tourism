@@ -145,6 +145,14 @@
     align-items: end;
   }
 
+  .grid-container > *:first-child {
+    grid-column: 2;
+  }
+
+  .grid-container > *:last-child {
+    grid-column: 3;
+  }
+
   .bgImage {
     background-image: url('/assets/home/background-home-desktop.jpg');
   }

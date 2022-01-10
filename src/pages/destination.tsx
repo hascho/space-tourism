@@ -50,11 +50,11 @@ const Destination: NextPage = () => {
           <div className={classNames(styles.destinationMeta, 'flex')}>
             <div>
               <Typography as='h3' className='text-accent fs-200 uppercase'>Avg. distance</Typography>
-              <Typography className='fs-500 ff-serif uppercase'>384,400 km</Typography>
+              <Typography className='ff-serif uppercase'>384,400 km</Typography>
             </div>
             <div>
               <Typography as='h3' className='text-accent fs-200 uppercase'>Est. travel time</Typography>
-              <Typography className='fs-500 ff-serif uppercase'>3 days</Typography>
+              <Typography className='ff-serif uppercase'>3 days</Typography>
             </div>
           </div>
         </article>

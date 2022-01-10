@@ -192,14 +192,6 @@ select {
     column-gap: var(--container-gap, 2rem);
     grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(1rem, 1fr);
   }
-
-  .grid-container > *:first-child {
-    grid-column: 2;
-  }
-  
-  .grid-container > *:last-child {
-    grid-column: 3;
-  }
 }
 
 .sr-only {

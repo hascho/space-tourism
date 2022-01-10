@@ -37,6 +37,10 @@
   margin-top: 2.5rem;
 }
 
+.destinationMeta p {
+  font-size: 1.75rem;
+}
+
 @media (min-width: 35em) {
   .numberedTitle {
     justify-self: start;
@@ -46,5 +50,25 @@
   .destinationMeta {
     flex-direction: row;
     justify-content: space-evenly
+  }
+}
+
+@media (min-width: 45em) {
+  .gridContainer {
+    justify-items: start;
+    align-content: start;
+    grid-template-areas:
+      '. title title .'
+      '. image tabs .'
+      '. image content .';
+  }
+
+  .image {
+    max-width: 90%;
+  }
+
+  .destinationMeta {
+    --gap: 6rem;
+    justify-content: start;
   }
 }
