@@ -2,12 +2,14 @@ import classNames from 'classnames';
 import type { TabsProps } from './Tabs.types';
 import styles from './Tabs.module.css';
 
-export const Tabs = ({ children }: TabsProps) => {
+export const Tabs = (props: TabsProps) => {
+  const { children, className } = props;
   return (
     <div className={classNames(
       styles.tabs,
       'underline-indicators',
-      'flex'
+      'flex',
+      className,
     )}>
       {children}
     </div>
