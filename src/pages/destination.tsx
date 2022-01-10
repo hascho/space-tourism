@@ -32,7 +32,7 @@ const Destination: NextPage = () => {
           className={styles.image}
         />
 
-        <Tabs className={styles.tabs}>
+        <Tabs className={styles.tabList}>
           <Tab selected>Moon</Tab>
           <Tab selected={false}>Mars</Tab>
           <Tab selected={false}>Europa</Tab>
