@@ -33,14 +33,17 @@ const Crew: NextPage = () => {
             commander of Crew Dragon Demo-2.
           </Typography>
         </article>
-        <div className={styles.image}>
+        <picture className={styles.image}>
+          <source srcSet="/assets/crew/image-douglas-hurley.webp" type="image/webp" />
           <Image
             src="/assets/crew/image-douglas-hurley.png"
             alt="Douglas Hurley"
-            width="514"
-            height="700"
+            layout="responsive"
+            width="100%"
+            height="100%"
+            objectFit="contain"
           />
-        </div>
+        </picture>
       </main>
     </div>
   );

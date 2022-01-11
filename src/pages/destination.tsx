@@ -16,21 +16,17 @@ const Destination: NextPage = () => {
 
       <main id="main" className={classNames("grid-container", styles.gridContainer, 'flow')}>
         <NumberedTitle className={styles.numberedTitle} number='01' text='Pick your destination' />
-        {/* <div className={styles.image}>
+        <picture className={styles.image}>
+          <source srcSet="/assets/destination/image-moon.webp" type="image/webp" />
           <Image
             src="/assets/destination/image-moon.png"
             alt="the moon"
-            layout="fixed"
-            width="445"
-            height="445"
+            layout="responsive"
+            width="100%"
+            height="100%"
+            objectFit="contain"
           />
-        </div> */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/assets/destination/image-moon.png"
-          alt="the moon"
-          className={styles.image}
-        />
+        </picture>
 
         <Tabs className={styles.tabList}>
           <Tab selected>Moon</Tab>

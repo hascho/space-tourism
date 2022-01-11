@@ -26,6 +26,7 @@
 .image {
   grid-area: image;
   max-width: 60%;
+  width: 100%;
 }
 
 .tabList {
