@@ -145,11 +145,11 @@
     align-items: end;
   }
 
-  .grid-container > *:first-child {
+  .gridContainer > *:first-child {
     grid-column: 2;
   }
 
-  .grid-container > *:last-child {
+  .gridContainer > *:last-child {
     grid-column: 3;
   }
 
