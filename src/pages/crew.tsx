@@ -25,7 +25,7 @@ const Crew: NextPage = () => {
         <article className={classNames(styles.crewDetails, 'flow')}>
           <header className='flow flow--space-small'>
             <Typography as="h2" className="fs-600 ff-serif uppercase">Commander</Typography>
-            <Typography className="fs-700 uppercase ff-serif">Doublas Hurley</Typography>
+            <Typography className="fs-700 uppercase ff-serif">Douglas Hurley</Typography>
           </header>
           <Typography>
             Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
