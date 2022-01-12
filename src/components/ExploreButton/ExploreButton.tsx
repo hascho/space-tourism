@@ -1,10 +1,10 @@
-import classNames from 'classnames';
+import clsx from 'clsx';
 import styles from './ExploreButton.module.css';
 
 function ExploreButton() {
   return (
     <a
-      className={classNames(
+      className={clsx(
         styles.largeButton,
         'uppercase', 'ff-serif', 'text-dark', 'bg-white'
       )}

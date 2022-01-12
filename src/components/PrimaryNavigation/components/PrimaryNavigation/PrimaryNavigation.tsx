@@ -1,4 +1,4 @@
-import classNames from 'classnames'
+import clsx from 'clsx'
 import { NavToggle } from '../NavToggle';
 import { PrimaryNavigationItem } from '../PrimaryNavigationItem';
 import { useToggle } from '../NavToggle/useToggle';
@@ -13,7 +13,7 @@ export const PrimaryNavigation = () => {
       <nav>
         <ul
           id="primary-navigation"
-          className={classNames(styles.primaryNavigation, 'underline-indicators', 'flex')}
+          className={clsx(styles.primaryNavigation, 'underline-indicators', 'flex')}
           data-visible={navOpen}
         >
           <PrimaryNavigationItem url="/" active>

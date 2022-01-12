@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import clsx from 'clsx';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import { SkipToContentButton } from '../components/SkipToContentButton';
@@ -10,11 +10,11 @@ import styles from '../styles/Crew.module.css';
 
 const Crew: NextPage = () => {
   return (
-    <div className={classNames(styles.crew, styles.bgImage)}>
+    <div className={clsx(styles.crew, styles.bgImage)}>
       <SkipToContentButton />
       <PrimaryHeader />
 
-      <main id="main" className={classNames("grid-container", styles.gridContainer, 'flow')}>
+      <main id="main" className={clsx("grid-container", styles.gridContainer, 'flow')}>
         <NumberedTitle className={styles.numberedTitle} number='02' text='Meet your crew' />
         <Dots className={styles.dotIndicators}>
           <Dot selected>The commander</Dot>
@@ -22,7 +22,7 @@ const Crew: NextPage = () => {
           <Dot selected={false}>The pilot</Dot>
           <Dot selected={false}>The crew engineer</Dot>
         </Dots>
-        <article className={classNames(styles.crewDetails, 'flow')}>
+        <article className={clsx(styles.crewDetails, 'flow')}>
           <header className='flow flow--space-small'>
             <Typography as="h2" className="fs-600 ff-serif uppercase">Commander</Typography>
             <Typography className="fs-700 uppercase ff-serif">Douglas Hurley</Typography>

@@ -1,10 +1,10 @@
-import classNames from 'classnames';
+import clsx from 'clsx';
 import type { TabProps } from './Tab.types';
 
 export const Tab = ({ selected, children }: TabProps) => {
   return (
     <button
-      className={classNames(
+      className={clsx(
         'uppercase',
         'text-accent',
         'ff-sans-cond',

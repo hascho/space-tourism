@@ -1,4 +1,4 @@
-import classNames from 'classnames'
+import clsx from 'clsx';
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import ExploreButton from '../components/ExploreButton'
@@ -44,11 +44,11 @@ const Home: NextPage = () => {
     //     <NumberedButton selected={false}>2</NumberedButton>
     //   </div>
     // </div>
-    <div className={classNames(styles.home, styles.bgImage)}>
+    <div className={clsx(styles.home, styles.bgImage)}>
       <SkipToContentButton />
       <PrimaryHeader />
 
-      <main id="main" className={classNames("grid-container", styles.gridContainer)}>
+      <main id="main" className={clsx("grid-container", styles.gridContainer)}>
         <div>
           <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to
           <span className="d-block fs-900 ff-serif text-white">Space</span></h1>
