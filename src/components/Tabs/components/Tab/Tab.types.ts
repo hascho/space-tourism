@@ -1,6 +1,12 @@
-import { ReactNode } from 'react';
+import { MouseEventHandler, ReactNode, SyntheticEvent } from 'react';
 
 export type TabProps = {
-  selected: boolean;
+  value: string;
   children: ReactNode;
+  id?: string;
+  selected?: boolean;
+  'aria-controls'?: string;
+  tabIndex?: number;
+  onChange?: (event: SyntheticEvent, value: string) => void;
+  onClick?: MouseEventHandler;
 }
